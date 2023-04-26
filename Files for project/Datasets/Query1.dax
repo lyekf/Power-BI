@@ -1,0 +1,24 @@
+﻿//EVALUATE KPIs
+//EVALUATE VALUES(KPIs[Aggregate rating])
+
+//EVALUATE
+//CALCULATETABLE ( 'Cuisine Table', 'Cuisine Table'[Cuisine Count] > 0 )
+//ORDER BY 'Cuisine Table'[Cuisine Count] DESC
+
+
+//DEFINE
+//    MEASURE Sales[My Sales Amount] =
+//        SUM ( Sales[Sales Amount] )
+//   MEASURE Sales[My Double Sales Amount] =
+//        SUM ( Sales[Sales Amount] ) * 2
+//EVALUATE
+//ADDCOLUMNS (
+//    VALUES ( 'Date'[Month] ),
+//    "My Sales Amount", [My Sales Amount],
+//    "My Double Sales Amount", [My Double Sales Amount]
+//)
+
+
+DEFINE
+	MEASURE 
+
